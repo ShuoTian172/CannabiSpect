@@ -19,7 +19,15 @@ import pyLDAvis.gensim
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
+def my_tokenizer(text):
+    """Tokenize review text"""
+    text = text.lower()  # lower case
+    text = re.sub("\d+", " ", text)  # remove digits
+    tokenizer = RegexpTokenizer(r'\w+')
+    token = [word for word in tokenizer.tokenize(text) if len(word) > 2]
+    token = [word_lemmatizer(x) for x in token]
+    token = [s for s in token if s not in stop_words]
+    return token
 
 def lemmatization(texts, tags=['NOUN', 'ADJ']):
     """
@@ -81,4 +89,17 @@ def compute_coherence_lda(corpus, dictionary, start=None, limit=None, step=None)
         topic_coherence.append(coherencemodel.get_coherence())
 
     return model_list, topic_coherence
+
+
+def doc_term_matrix(data, text):
+    """Returns document-term matrix, vocabulary, and word_id"""
+    counter = CountVectorizer(tokenizer=my_tokenizer, ngram_range=(1, 1))
+    data_vectorized = counter.fit_transform(data[text])
+    X = data_vectorized.toarray()
+    bow_docs = pd.DataFrame(X, columns=counter.get_feature_names())
+    vocab = tuple(bow_docs.columns)
+    word2id = dict((v, idx) for idx, v in enumerate(vocab))
+    return data_vectorized, vocab, word2id, counter
+
+
 
