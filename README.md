@@ -1,6 +1,6 @@
 # CannabiSpect
 
-<p align="center"><img src="Bloomberg.png" style="height: 100%; width: 100%; max-width: 200px" /></p>
+<p align="center"><img src="images/Bloomberg.png" style="height: 100%; width: 100%; max-width: 200px" /></p>
 
 ## Overview
 According to BloombergOpinion, global spending on cannabis is forecast to be $40 billion by 2024 on both medical and recreational consumption. Since 2018, cannabis in Canada is legal for both recreational and medicinal purposes, up to now, hundreds of millions cannabis consumers have been showing up in this promising market. The cannabis companies face the challenge on how to retain and acquire customers frequently due to the competition between various cannabis companies. Therefore, it is imperative that cannabis companies examine their customers' opinion about their product. Indeed, customer satisfaction is a recipe for attracting new customers. The insight gained from analyzing customer opinions can be effectively used to develop a custom marketing strategy to positively shift perceptions and attract new customers. To develop an effective marketing strategy, the company needs to collect feedbacks from customers by conducting online survey of its product or by using online reviews provided by the customers.
@@ -18,7 +18,7 @@ CannabiSpect aims to help credit companies acquire new customers by showcasing t
 
 CannabiSpect interactive dashboard has four tabs, corresponding to four categories identified by the topic modeling. Each tab contains the category keywords, correlated strains and consumers sentiment on keywords and/or strains over different time scales (year by year, quarter by quarter, month by month, week by week or day by day). Specific year sentiment can also be displayed by selecting the drop-down menu of year 2010 to 2019. 
 
-<img src="./images/Dashboard_2.png"/>
+<img src="./images/dashboard_2.png"/>
 
 The user (either a cannabis company or a potential customer) can hit any category (tab), topic (bar) and correlated strain (bar), the sentiment score will change accordingly. The sentiment score (y-axis) is closer to +1 meaning more positive, and closer to -1 meaning more negative. 
 
@@ -30,19 +30,19 @@ The data that was used to create CannabiSpect was provided by the Right Strain c
 ## Exploratory data analysis for CannabiSpect?
 To explore my data, I looked at the star rating customers gave to each cannabis as shown below.
 
-<img src="./images/rating.png" width="50%"/>
+<img src="./images/rating.png"/>
 
 We can see that there is a severe imbalance in the rating as most customer reviews were rated either 4 or 5.
 In addition, I also looked at the most frequent words customers used in cannabis reviews. From the figure shown below, we can see that taste, smoke, effect, smell and wellness are frequently used.
 
-<img src="./figures/word_freq.png" width="50%"/>
+<img src="./figures/word_freq.png" />
 
 This also suggests that we need to add n-gram when modeling the topics.
 
 ## How was CannabiSpect implemented?
 CannabiSpect was implemented using unsupervised learning methods for natural language processing in Python, topic modeling with LDA, and sentiment analysis with model trained by GloVe/SVM. The NLP pipeline for this project is depicted below.
 
-<img src="./images/pipeline.png" width="50%"/>
+<img src="./images/pipeline.png" />
 
 ## Summary and Outlook
 
