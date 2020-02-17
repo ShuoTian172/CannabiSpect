@@ -6,6 +6,10 @@ import numpy as np
 import re
 import spacy
 from nltk.corpus import stopwords
+from nltk.tokenize import RegexpTokenizer
+from nltk.stem import WordNetLemmatizer, PorterStemmer
+from nltk.corpus import wordnet
+from nltk.corpus import stopwords
 import pickle
 # Gensim
 import gensim
@@ -29,7 +33,7 @@ def my_tokenizer(text):
     token = [s for s in token if s not in stop_words]
     return token
 
-def lemmatization(texts, tags=['NOUN', 'ADJ']):
+def lemmatization(texts, tags=['NOUN']):
     """
         Word lemmatization function.
         Args:
@@ -39,11 +43,30 @@ def lemmatization(texts, tags=['NOUN', 'ADJ']):
             output: list of lemmatized word
     """
     output = []
-    nlp = spacy.load('en', disable=['parser', 'ner'])
+    # nlp = spacy.load('en', disable=['parser', 'ner'])
     for sent in texts:
         doc = nlp(" ".join(sent))
         output.append([token.lemma_ for token in doc if token.pos_ in tags])
     return output
+
+def word_lemmatizer(text):
+    """Word lemmatization function"""
+    lemmatizer = WordNetLemmatizer()
+    text = lemmatizer.lemmatize(text, get_wordnet_pos(text))
+    return text
+
+def get_wordnet_pos(word):
+    """Map POS tag to first character lemmatize() accepts"""
+    tag = nltk.pos_tag([word])[0][1][0].upper()
+    tag_dict = {"J": wordnet.ADJ,
+                "N": wordnet.NOUN,
+                "V": wordnet.VERB,
+                "R": wordnet.ADV}
+
+    return tag_dict.get(tag, wordnet.NOUN)
+
+stop_words = stopwords.words('english')
+stop_words.extend('strain')
 
 def remove_stopwords(rev):
     """
@@ -100,6 +123,20 @@ def doc_term_matrix(data, text):
     vocab = tuple(bow_docs.columns)
     word2id = dict((v, idx) for idx, v in enumerate(vocab))
     return data_vectorized, vocab, word2id, counter
+
+def topic_threshold(doc_topic, topic_vector, threshold=None):
+    """Return the topic number if the topic is more than 70% dominant"""
+    topic_num_list = []
+    for i in range(len(topic_vector)):
+        topic_num = [idx for idx, value in enumerate(
+            doc_topic[i]) if value > threshold]
+        if topic_num != []:
+            topic_num = topic_num[0]
+        else:
+            topic_num = 'None'
+        topic_num_list.append(topic_num)
+    return topic_num_list
+
 
 
 
