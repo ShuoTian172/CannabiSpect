@@ -1,6 +1,6 @@
 # CannabiSpect
 
-<img src="./images/Bloomberg.png"  align="center"/>
+<img src="./images/Bloomberg.png"  align="center" width="100" height="50"/>
 
 ## Overview
 According to BloombergOpinion, global spending on cannabis is forecast to be $40 billion by 2024 on both medical and recreational consumption. Since 2018, cannabis in Canada is legal for both recreational and medicinal purposes, up to now, hundreds of millions cannabis consumers have been showing up in this promising market. The cannabis companies face the challenge on how to retain and acquire customers frequently due to the competition between various cannabis companies. Therefore, it is imperative that cannabis companies examine their customers' opinion about their product. Indeed, customer satisfaction is a recipe for attracting new customers. The insight gained from analyzing customer opinions can be effectively used to develop a custom marketing strategy to positively shift perceptions and attract new customers. To develop an effective marketing strategy, the company needs to collect feedbacks from customers by conducting online survey of its product or by using online reviews provided by the customers.
