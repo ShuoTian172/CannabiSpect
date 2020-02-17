@@ -1,6 +1,9 @@
 # CannabiSpect
 
-<img src="./images/Bloomberg.png"  align="center" width="600" height="400"/>
+<p align="center">
+  <img width="500" height="300" src="./images/Bloomberg.png">
+</p>
+
 
 ## Overview
 According to BloombergOpinion, global spending on cannabis is forecast to be $40 billion by 2024 on both medical and recreational consumption. Since 2018, cannabis in Canada is legal for both recreational and medicinal purposes, up to now, hundreds of millions cannabis consumers have been showing up in this promising market. The cannabis companies face the challenge on how to retain and acquire customers frequently due to the competition between various cannabis companies. Therefore, it is imperative that cannabis companies examine their customers' opinion about their product. Indeed, customer satisfaction is a recipe for attracting new customers. The insight gained from analyzing customer opinions can be effectively used to develop a custom marketing strategy to positively shift perceptions and attract new customers. To develop an effective marketing strategy, the company needs to collect feedbacks from customers by conducting online survey of its product or by using online reviews provided by the customers.
@@ -35,7 +38,7 @@ To explore my data, I looked at the star rating customers gave to each cannabis 
 We can see that there is a severe imbalance in the rating as most customer reviews were rated either 4 or 5.
 In addition, I also looked at the most frequent words customers used in cannabis reviews. From the figure shown below, we can see that taste, smoke, effect, smell and wellness are frequently used.
 
-<img src="./figures/word_freq.png" />
+<img src="./figures/word_freq.png" width="600" height="400"/>
 
 This also suggests that we need to add n-gram when modeling the topics.
 
