@@ -33,12 +33,16 @@ The data that was used to create CannabiSpect was provided by the Right Strain c
 ## Exploratory data analysis for CannabiSpect?
 To explore my data, I looked at the star rating customers gave to each cannabis as shown below.
 
-<img src="./images/rating.png"/>
+
+<p align="center">
+  <img width="500" height="380" src="./images/rating.png"">
+</p>
+
 
 We can see that there is a severe imbalance in the rating as most customer reviews were rated either 4 or 5.
 In addition, I also looked at the most frequent words customers used in cannabis reviews. From the figure shown below, we can see that taste, smoke, effect, smell and wellness are frequently used.
 
-<img src="./figures/word_freq.png" width="800" height="400"/>
+<img src="./figures/word_freq.png" width="1000" height="400"/>
 
 This also suggests that we need to add n-gram when modeling the topics.
 
