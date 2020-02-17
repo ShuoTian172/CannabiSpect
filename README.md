@@ -19,14 +19,14 @@ CannabiSpect aims to help credit companies acquire new customers by showcasing t
 
 ## How to use CannabiSpect?
 
-<img src="./images/Dashboard_1.png"/>
+
 
 CannabiSpect interactive dashboard has four tabs, corresponding to four categories identified by the topic modeling. Each tab contains the category keywords, correlated strains and consumers sentiment on keywords and/or strains over different time scales (year by year, quarter by quarter, month by month, week by week or day by day). Specific year sentiment can also be displayed by selecting the drop-down menu of year 2010 to 2019. 
-
-<img src="./images/dashboard_2.png"/>
+<img src="./images/Dashboard_1.png"/>
 
 The user (either a cannabis company or a potential customer) can hit any category (tab), topic (bar) and correlated strain (bar), the sentiment score will change accordingly. The sentiment score (y-axis) is closer to +1 meaning more positive, and closer to -1 meaning more negative. 
 
+<img src="./images/dashboard_2.png"/>
 
 ## What type of data was used for CannabiSpect?
 
