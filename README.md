@@ -1,12 +1,14 @@
 # CannabiSpect
 
-<p align="center">
-  <img width="500" height="380" src="./images/Bloomberg.png">
-</p>
 
 
 ## Overview
 According to BloombergOpinion, global spending on cannabis is forecast to be $40 billion by 2024 on both medical and recreational consumption. Since 2018, cannabis in Canada is legal for both recreational and medicinal purposes, up to now, hundreds of millions cannabis consumers have been showing up in this promising market. The cannabis companies face the challenge on how to retain and acquire customers frequently due to the competition between various cannabis companies. Therefore, it is imperative that cannabis companies examine their customers' opinion about their product. Indeed, customer satisfaction is a recipe for attracting new customers. The insight gained from analyzing customer opinions can be effectively used to develop a custom marketing strategy to positively shift perceptions and attract new customers. To develop an effective marketing strategy, the company needs to collect feedbacks from customers by conducting online survey of its product or by using online reviews provided by the customers.
+
+<p align="center">
+  <img width="500" height="380" src="./images/Bloomberg.png">
+</p>
+
 
 ## What is CannabiSpect?
 CannabiSpect is a web application that provides an overall customer satisfaction of each strain (about 100 different strains) based on different categories such as wellness (pain, insomnia, depression, Nausea, inflammation, anxiety), effect (relaxing, arousing, euphoria, focusing, sleep, energy), sensation (taste, smell, flavor, aroma, color). In other words, CannabiSpect provides actionable insights to cannabis companies based on customer reviews. Most importantly, CannabiSpect identifies these categories using unsupervised learning methods of Natural Language Processing and Topic Modeling with Latent Dirichlet Allocation. Besides, CannabiSpect analyzes consumers satisfactions’ on these categories utilizing trained specific-cannabis sentiment analysis model.
