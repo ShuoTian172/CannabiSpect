@@ -10,14 +10,14 @@ According to BloombergOpinion, global spending on cannabis is forecast to be $40
 </p>
 
 
-## What is CannabiSpect?
+## What is [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
 CannabiSpect is a web application that provides an overall customer satisfaction of each strain (about 100 different strains) based on different categories such as wellness (pain, insomnia, depression, Nausea, inflammation, anxiety), effect (relaxing, arousing, euphoria, focusing, sleep, energy), sensation (taste, smell, flavor, aroma, color). In other words, CannabiSpect provides actionable insights to cannabis companies based on customer reviews. Most importantly, CannabiSpect identifies these categories using unsupervised learning methods of Natural Language Processing and Topic Modeling with Latent Dirichlet Allocation. Besides, CannabiSpect analyzes consumers satisfactions’ on these categories utilizing trained specific-cannabis sentiment analysis model.
 
 
-## Why CannabiSpect?
+## Why [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
 CannabiSpect aims to help credit companies acquire new customers by showcasing the rate of customer satisfaction in different categories, which a potential customer cannot extract by reading thousands of online reviews. Essentially, any cannabis company can use CannabiSpect as an advertisement web application to attract new customers to consume for its specific strains. In addition, CannabiSpect also helps cannabis companies identify area of interest that needs improvement, which helps maximize their chances of acquiring new customers. In contrast, potential customers can also use CannabiSpect to filter out different cannabis strains they don't like.
 
-## How to use CannabiSpect?
+## How to use [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
 
 
 
@@ -28,11 +28,11 @@ The user (either a cannabis company or a potential customer) can hit any categor
 
 <img src="./images/dashboard_2.png"/>
 
-## What type of data was used for CannabiSpect?
+## What type of data was used for [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
 
 The data that was used to create CannabiSpect was provided by the Right Strain company. The dataset comprises 100 different cannabis strains with over 180k unstructured text reviews.
 
-## Exploratory data analysis for CannabiSpect?
+## Exploratory data analysis for [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
 To explore my data, I looked at the star rating customers gave to each cannabis as shown below.
 
 
@@ -48,7 +48,7 @@ In addition, I also looked at the most frequent words customers used in cannabis
 
 This also suggests that we need to add n-gram when modeling the topics.
 
-## How was CannabiSpect implemented?
+## How was [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten) implemented?
 CannabiSpect was implemented using unsupervised learning methods for natural language processing in Python, topic modeling with LDA, and sentiment analysis with model trained by GloVe/SVM. The NLP pipeline for this project is depicted below.
 
 <img src="./images/pipeline.png" />
