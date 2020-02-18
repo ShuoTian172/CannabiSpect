@@ -15,7 +15,7 @@ CannabiSpect is a web application that provides an overall customer satisfaction
 
 
 ## Why [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
-CannabiSpect aims to help credit companies acquire new customers by showcasing the rate of customer satisfaction in different categories, which a potential customer cannot extract by reading thousands of online reviews. Essentially, any cannabis company can use CannabiSpect as an advertisement web application to attract new customers to consume for its specific strains. In addition, CannabiSpect also helps cannabis companies identify area of interest that needs improvement, which helps maximize their chances of acquiring new customers. In contrast, potential customers can also use CannabiSpect to filter out different cannabis strains they don't like.
+CannabiSpect aims to help cannabis companies acquire new customers by showcasing the rate of customer satisfaction in different categories, which a potential customer cannot extract by reading thousands of online reviews. Essentially, any cannabis company can use CannabiSpect as an advertisement web application to attract new customers to consume for its specific strains. In addition, CannabiSpect also helps cannabis companies identify area of interest that needs improvement, which helps maximize their chances of acquiring new customers. In contrast, potential customers can also use CannabiSpect to filter out different cannabis strains they don't like.
 
 ## How to use [CannabiSpect](https://public.tableau.com/profile/shuo.tian#!/vizhome/DemoFeb15/LieferproblemeanWeihnachten)?
 
